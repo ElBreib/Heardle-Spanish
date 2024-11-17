@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de música del Brave 😁 y de mi amor precioso y la más bonita de este mundo 💖</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Juego de música del Brave 😁 y de mi amor precioso la más bonita de este mundo 💖</h1>
+    <h2>¡Adivina La Canción!</h2>
+
+    <!-- Reproductor de audio sin controles -->
+    <audio id="audio-player"></audio>
+
+    <!-- Barra de progreso -->
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- Contador de segundos debajo de la barra -->
+    <p id="time-display">0s</p>
+
+    <!-- Caja de entrada para adivinanza -->
+    <input type="text" id="guess-input" placeholder="Escribe el nombre de la canción">
+    
+    <!-- Muestra los intentos justo debajo de la barra de texto -->
+    <div id="attempts-box"></div>
+
+    <!-- Sugerencias de canciones -->
+    <div id="suggestion-box"></div>
+
+    <!-- Botones de acción -->
+    <button id="play-button">Reproducir</button>
+    <button id="submit-guess" disabled>Enviar Respuesta</button>
+    <button id="next-song" hidden>Siguiente Canción</button>
+
+    <!-- Retroalimentación -->
+    <p id="feedback"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
